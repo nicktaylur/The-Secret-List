@@ -31,6 +31,7 @@ body {
 }
 
 .riddle {
+    display: flex;
     margin-top: 30px;
     margin-bottom: 40px;
     font-family: "Workbench", sans-serif;
