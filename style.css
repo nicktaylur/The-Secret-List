@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grechen+Fuemen&family=Nanum+Gothic+Coding&family=Sigmar&family=Sixtyfour&family=Workbench&display=swap');
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(237, 209, 166, 0.5), rgba(59, 49, 21, 0.5)),
+              url('assets/paperBG-1.jpg');
+    background-size: cover;
+}
+
+.header {
+    padding-top: 60px;
+    margin-bottom: -40px;
+    font-family: "Workbench", sans-serif;
+    font-size: 1.5rem;
+}
+
+.fade-text {
+    font-family: "Workbench", sans-serif;
+    font-size: 3rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    color: #222222;
+}
+
+.riddle {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: "Workbench", sans-serif;
+    font-size: 1rem;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 2s forwards;
+    color: #222222;
+
+}
+
+.input-container {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 3s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+input {
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-family: "Workbench", sans-serif;
+    border: 2px solid rgb(235, 234, 232);
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #141515;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #222222;
+    font-family: "Workbench", sans-serif;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #18191a;
+}
+
+.error-message {
+    color: #dc3545;
+    font-family: "Workbench", sans-serif;
+    font-size: 1rem;
+    margin-top: 5px;
+    display: none;
+}
+
+.signature {
+    font-family: "Workbench", sans-serif;
+    font-size: 0.5rem;
+    padding-top: 100px;
+    text-align: center;
+}
+
+
+.container-list {
+    margin: 50px 70px;
+    max-width: 600px;
+}
+
+a {
+    color: #222222;
+    text-decoration: none;
+}
+
+.list-1 h4, .list-2 h4, .list-3 h4, .list-4 h4, .list-5 h4 {
+    line-height: 1.5;
+}
+
+.list-1, .list-2, .list-3, .list-4, .list-5 {
+    margin-top: 3rem;
+    margin-bottom: 20px;
+    color: #222222;
+    border-bottom: 2px solid #222222;
+    opacity: 0;
+    font-family: "Workbench", sans-serif;
+}
+
+.list-1 {
+    animation: fadeIn 1s ease-in-out 2s forwards;
+}
+
+.list-2 {
+    animation: fadeIn 1s ease-in-out 3s forwards;
+}
+
+.list-3 {
+    animation: fadeIn 2s ease-in-out 4s forwards;
+}
+
+.list-4 {
+    animation: fadeIn 3s ease-in-out 5s forwards;
+}
+
+.list-5 {
+    animation: fadeIn 4s ease-in-out 6s forwards; 
+}
+
+.footer {
+    padding-bottom: 40px;
+    font-family: "Workbench", sans-serif;
+    font-size: 0.8rem;
+}
