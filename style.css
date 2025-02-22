@@ -38,6 +38,7 @@ body {
     opacity: 0;
     animation: fadeIn 2s ease-in-out 2s forwards;
     color: #222222;
+    align-items: center;
 
 }
 
